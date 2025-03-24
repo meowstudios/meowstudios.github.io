@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.png" type="image/png">
+<title>Cooking Mastery</title>
+   <link rel="stylesheet" href="styles.css"> 
+
+</head>
+<body>
+
+<div class="top-menu">
+  <div class="left-buttons"> <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <img src="meow.png" alt="Logo" />
+  </div>
+  <div class="right-buttons"> <a href="#" class="menu-button">Community</a>
+  </div>
+  <div class="hamburger-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+ 
+  <img class = "myBannerImg" src = "CookingBanner.jpg"/>
+  <br/>
+ 
+  <div align = "center" class = "myGameTitle">
+  <br/>
+  <h2>Cooking Mastery - 4.5 ★ (10.1K reviews)</h2>
+  <a id="appstoreLink" href="https://apps.apple.com/us/app/cooking-mastery-kitchen-games/id1572982050">
+  <img src="but-appstore.png" alt="App Store">
+</a>
+<a id="googleplayLink" href="https://play.google.com/store/apps/details?id=com.casualgamesempire.cookingmastery">
+  <img src="but-google.png" alt="Google Play">
+</a>
+<a id="amazonLink" href="https://www.amazon.com/Cooking-Mastery-Restaurant-Games-Girls/dp/B096VQ6HB1">
+  <img src="but-amazon.png" alt="Amazon Appstore">
+</a>
+   <p>Join millions of players in this free fun simulation. COOK, SERVE and UPGRADE 🍕 Food and Kitchens in this Cooking Game Adventure. 🍳 We offer you a fast-paced cooking gameplay with a variety of delicious meals 🌎 worldwide and the chance to improve your skills in Cooking Mastery. Become the 👨‍🍳 star chef you always dreamed to be and manage your restaurants into the modern era in our highly rewarding 🕑 time-management cooking game. Cook with craze in your pans and hearts to deliver the best food to your customers.</p>
+
+<img class = "myBannerImg" src = "cook-screen1.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "cook-screen2.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "cook-screen3.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "cook-screen4.jpg"/>
+  </div>
+
+<script>
+function isFireTablet() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /silk/i.test(userAgent) && /android/i.test(userAgent);
+}
+
+const appstoreLink = document.getElementById("appstoreLink");
+const googleplayLink = document.getElementById("googleplayLink");
+const amazonLink = document.getElementById("amazonLink");
+
+if (isFireTablet()) {
+  appstoreLink.style.display = "inline";
+  googleplayLink.style.display = "inline";
+  amazonLink.style.display = "inline"; // Or "block", depending on your layout
+} else {
+  amazonLink.style.display = "none";
+}
+</script>
+ <script>
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+  </body>
+</html>
