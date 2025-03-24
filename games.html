@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.png" type="image/png">
+<title>Our Games</title>
+ <link rel="stylesheet" href="styles.css"> 
+<style>
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      display: block;
+    }
+
+    tr {
+      display: block; /* Change to block */
+    }
+
+    td {
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-menu">
+  <div class="left-buttons"> <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button selected">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <img src="meow.png" alt="Logo" />
+  </div>
+  <div class="right-buttons"> <a href="#" class="menu-button">Community</a>
+  </div>
+  <div class="hamburger-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button selected">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+
+<table>
+  <tr>
+    <td><a href ="cookingmastery.html"><img src="icon1.png" alt="Cooking Mastery"></a></td>
+    <td><a href ="bingomastery.html"><img src="icon2.png" alt="Bingo Mastery"></a></td>
+    <td><a href ="cafetycoon.html"><img src="icon3.png" alt="Cafe Tycoon"></a></td>
+  </tr>
+  <tr>
+    <td><a href ="solitairemastery.html"><img src="icon4.png" alt="Solitaire Harvest"></a></td>
+    <td><a href ="bingomadness.html"><img src="icon5.png" alt="Bingo Madness"></a></td>
+    <td><a href ="coloring.html"><img src="icon6.png" alt="Coloring Mastery"></a></td>
+  </tr>
+</table>
+ 
+ <script>
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+
+<script>
+  function rearrangeTable() {
+    const table = document.querySelector('table');
+    const tds = table.querySelectorAll('td');
+    const trs = table.querySelectorAll('tr');
+
+    if (window.innerWidth <= 768) {
+      // Rearrange the td elements
+      for (let i = trs.length - 1; i >= 0; i--) {
+        trs[i].remove();
+      }
+
+      for (let i = 0; i < tds.length; i += 2) {
+        const tr = document.createElement('tr');
+        tr.appendChild(tds[i]);
+        if (tds[i + 1]) {
+          tr.appendChild(tds[i + 1]);
+        }
+        table.appendChild(tr);
+      }
+    } else {
+        //Restore original table
+        const originalHTML = `
+            <tr>
+              <td><a href="cookingmastery.html"><img src="icon1.png" alt="Cooking Mastery"></a></td>
+              <td><a href="bingomastery.html"><img src="icon2.png" alt="Bingo Mastery"></a></td>
+              <td><a href="cafetycoon.html"><img src="icon3.png" alt="Cafe Tycoon"></a></td>
+            </tr>
+            <tr>
+              <td><a href="solitairemastery.html"><img src="icon4.png" alt="Solitaire Harvest"></a></td>
+              <td><a href="bingomadness.html"><img src="icon5.png" alt="Bingo Madness"></a></td>
+              <td><a href="coloring.html"><img src="icon6.png" alt="Coloring Mastery"></a></td>
+            </tr>
+        `;
+        table.innerHTML = originalHTML;
+    }
+  }
+
+  // Call the function on page load and resize
+  rearrangeTable();
+  window.addEventListener('resize', rearrangeTable);
+</script>
+
+  </body>
+</html>
