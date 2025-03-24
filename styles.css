@@ -1,0 +1,202 @@
+   @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+  .top-menu {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+	 z-index: 10; /* Set a higher z-index */
+  }
+
+  .left-buttons, .right-buttons { /* Show on desktop */
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+
+  .hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-button {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .menu-button.selected {
+    color: orange;
+  }
+
+    /*.menu-button.selected::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 60%;
+    height: 2px;
+    background-color: orange;
+    transform: translateX(-50%);
+  }*/
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .left-buttons, .right-buttons {
+      display: none; /* Hide desktop buttons on mobile */
+    }
+
+    .hamburger-icon {
+      display: flex; /* Show hamburger icon on mobile */
+    }
+
+    .mobile-menu {
+      display: none; /* Will be toggled by JavaScript */
+    }
+  }
+
+  .full-width-background {
+    width: 100%;
+    background-image: url('WebsiteBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 100vh; /* Changed to 100vh */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+	 overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+  }.scrolling-buttons {
+    display: inline-flex; /* Use inline-flex for horizontal scrolling */
+    animation: scroll 20s linear infinite; /* Adjust animation duration as needed */
+	  z-index: 1; /* Set a lower z-index */
+  }
+
+  .scroll-button {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px; /* Space between buttons */
+	margin-top:50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1910px); /* (300px + 10px) * 6 - 10px */
+    }
+  }
+
+  .scrolling-buttons:hover {
+    animation-play-state: paused; /* Pause on hover */
+  }
+
+  .content-container {
+    display: flex;
+    padding: 70px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .image-container {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .text-container {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text-container h2 {
+    color: orange;
+  }
+
+  .image-container img, .text-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 15px; /* Reduced padding */
+    }
+
+    .image-container {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+
+    .text-container h2 {
+      font-size: 1.5em; /* Adjust font size */
+    }
+
+    .text-container p {
+      font-size: 1em; /* Adjust font size */
+    }
+
+    .full-width-background {
+        background-position: center;
+    }
+  }
+  
+  .privacytext
+  {
+	  padding:70px;
+	  
+  }

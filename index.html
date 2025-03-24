@@ -4,211 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.png" type="image/png">
 <title>Meow Studios - Play Casual Games</title>
-<style>
-   @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-
-  .top-menu {
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    box-sizing: border-box;
-    position: relative;
-	 z-index: 10; /* Set a higher z-index */
-  }
-
-  .left-buttons, .right-buttons { /* Show on desktop */
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  .logo img {
-    max-height: 50px;
-  }
-
-  .hamburger-icon {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-  }
-
-  .hamburger-icon div {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-  }
-
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .menu-button {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-family: 'Paytone One', sans-serif;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .menu-button.selected {
-    color: orange;
-  }
-
-  .menu-button.selected::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    width: 60%;
-    height: 2px;
-    background-color: orange;
-    transform: translateX(-50%);
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .left-buttons, .right-buttons {
-      display: none; /* Hide desktop buttons on mobile */
-    }
-
-    .hamburger-icon {
-      display: flex; /* Show hamburger icon on mobile */
-    }
-
-    .mobile-menu {
-      display: none; /* Will be toggled by JavaScript */
-    }
-  }
-
-  .full-width-background {
-    width: 100%;
-    background-image: url('WebsiteBanner.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    min-height: 100vh; /* Changed to 100vh */
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-	 overflow: hidden; /* Hide overflow */
-    white-space: nowrap; /* Prevent wrapping */
-  }.scrolling-buttons {
-    display: inline-flex; /* Use inline-flex for horizontal scrolling */
-    animation: scroll 20s linear infinite; /* Adjust animation duration as needed */
-	  z-index: 1; /* Set a lower z-index */
-  }
-
-  .scroll-button {
-    width: 300px;
-    height: 300px;
-    margin-right: 10px; /* Space between buttons */
-	margin-top:50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-1910px); /* (300px + 10px) * 6 - 10px */
-    }
-  }
-
-  .scrolling-buttons:hover {
-    animation-play-state: paused; /* Pause on hover */
-  }
-
-  .content-container {
-    display: flex;
-    padding: 70px;
-    box-sizing: border-box;
-    align-items: center;
-  }
-
-  .image-container {
-    flex: 1;
-    padding-right: 20px;
-  }
-
-  .text-container {
-    flex: 1;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  .text-container h2 {
-    color: orange;
-  }
-
-  .image-container img, .text-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .content-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 30px 15px; /* Reduced padding */
-    }
-
-    .image-container {
-      padding-right: 0;
-      padding-bottom: 20px;
-    }
-
-    .text-container h2 {
-      font-size: 1.5em; /* Adjust font size */
-    }
-
-    .text-container p {
-      font-size: 1em; /* Adjust font size */
-    }
-
-    .full-width-background {
-        background-position: center;
-    }
-  }
-</style>
-
+ <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
 <div class="top-menu">
   <div class="left-buttons"> <a href="index.html" class="menu-button selected">Home</a>
-    <a href="#" class="menu-button">Games</a>
+    <a href="games.html" class="menu-button">Games</a>
     <a href="contact.html" class="menu-button">Contact</a>
   </div>
   <div class="logo">
@@ -223,7 +25,7 @@
   </div>
   <div class="mobile-menu">
     <a href="index.html" class="menu-button selected">Home</a>
-    <a href="#" class="menu-button">Games</a>
+    <a href="games.html" class="menu-button">Games</a>
     <a href="contact.html" class="menu-button">Contact</a>
     <a href="#" class="menu-button">Community</a>
   </div>
@@ -232,12 +34,12 @@
 
 <div class="full-width-background">
 <div class="scrolling-buttons">
-    <div class="scroll-button" ><img src="icon1.png" alt="Cooking Mastery"></div>
-    <div class="scroll-button" ><img src="icon2.png" alt="Bingo Mastery"></div>
-    <div class="scroll-button" ><img src="icon3.png" alt="Restaurant Cafe Tycoon"></div>
-    <div class="scroll-button" ><img src="icon4.png" alt="Solitaire Harvest Mastery"></div>
-    <div class="scroll-button" ><img src="icon5.png" alt="Bingo Madness"></div>
-    <div class="scroll-button" ><img src="icon6.png" alt="Coloring Mastery"></div>
+    <div class="scroll-button" ><a href ="cookingmastery.html"><img src="icon1.png" alt="Cooking Mastery"></a></div>
+    <div class="scroll-button" ><a href ="bingomastery.html"><img src="icon2.png" alt="Bingo Mastery"></a></div>
+    <div class="scroll-button" ><a href ="cafetycoon.html"><img src="icon3.png" alt="Restaurant Cafe Tycoon"></a></div>
+    <div class="scroll-button" ><a href ="solitairemastery.html"><img src="icon4.png" alt="Solitaire Harvest Mastery"></a></div>
+    <div class="scroll-button" ><a href ="bingomadness.html"><img src="icon5.png" alt="Bingo Madness"></a></div>
+    <div class="scroll-button" ><a href ="coloring.html"><img src="icon6.png" alt="Coloring Mastery"></a></div>
   </div>
   </div>
   
@@ -249,7 +51,7 @@
     <h2>Play Cooking Mastery</h2>
 	<h3>4.5 ★ (10.1K reviews)</h3>
     <p>Join millions of players in this free fun simulation. COOK, SERVE and UPGRADE 🍕 Food and Kitchens in this Cooking Game Adventure. 🍳 We offer you a fast-paced cooking gameplay with a variety of delicious meals 🌎 worldwide and the chance to improve your skills in Cooking Mastery. Become the 👨‍🍳 star chef you always dreamed to be and manage your restaurants into the modern era in our highly rewarding 🕑 time-management cooking game. Cook with craze in your pans and hearts to deliver the best food to your customers.</p>
-<img src ="play.png"/> 
+<a href ="cookingmastery.html"><img src ="play.png"/></a>
  </div>
 </div>
 
@@ -261,7 +63,7 @@
     <h2>Play Solitaire Harvest Mastery</h2>
 	<h3>4.5 ★</h3>
     <p>Step into a world of classic card fun with Solitaire TriPeaks Mastery, the ultimate solitaire experience! Challenge your mind with endless levels of TriPeaks Solitaire and embark on a card journey full of rewards, daily bonuses, and unique surprises. Grow and upgrade your farm so that you harvest more resources every hour.</p>
-<img src ="play.png"/> 
+<a href ="solitairemastery.html"><img src ="play.png"/> </a>
  </div>
 </div>
 
@@ -273,7 +75,7 @@
     <h2>Play Bingo Mastery</h2>
 	<h3>4.8 ★ (6.84K reviews)</h3>
     <p>The New Era of Bingo Games is here! Bingo Mastery is a fun and fast-paced game that puts a strategic twist on the classic game of bingo. Players race to complete patterns on their bingo cards while using power-ups, bonuses, and smart number tracking to gain an edge. With multiple levels, challenges, and multiplayer options, Bingo Mastery blends luck and skill for an exciting, competitive experience.</p>
-<img src ="play.png"/> 
+<a href ="bingomastery.html"><img src ="play.png"/> </a>
  </div>
 </div>
 
@@ -285,7 +87,7 @@
     <h2>Play Restaurant Cafe Tycoon</h2>
 	<h3>4.9 ★</h3>
     <p>Restaurant Cafe Idle Tycoon is a great new restaurant simulation and cafe cooking game that puts your business skills and creativity in using resource management to test.</p>
-<img src ="play.png"/> 
+<a href ="cafetycoon.html"><img src ="play.png"/> </a>
  </div>
 </div>
   
