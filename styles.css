@@ -193,10 +193,25 @@
     .full-width-background {
         background-position: center;
     }
-  }
-  
+  }  
   .privacytext
   {
-	  padding:70px;
-	  
+	  padding:70px;	  
+  }  
+  .myBannerImg
+  {
+	  width: 100%;	  
   }
+  .myGameTitle h2
+  {
+	  font-family: 'Paytone One', sans-serif;
+    font-weight: bold;	 
+//color: orange;	
+  }  
+  .myGameTitle { 
+    font-family: 'Open Sans', sans-serif;
+	padding-left:70px;	
+padding-right:70px;		
+  }
+ 
+}
