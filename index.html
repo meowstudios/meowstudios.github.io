@@ -5,7 +5,7 @@
 <link rel="icon" href="favicon.png" type="image/png">
 <title>Meow Studios - Play Casual Games</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
   .top-menu {
     width: 100%;
@@ -16,9 +16,10 @@
     justify-content: space-between;
     padding: 0 10px;
     box-sizing: border-box;
+    position: relative;
   }
 
-  .left-buttons {
+  .left-buttons, .right-buttons { /* Show on desktop */
     display: flex;
     align-items: center;
   }
@@ -28,15 +29,48 @@
     text-align: center;
   }
 
+  .logo img {
+    max-height: 50px;
+  }
+
+  .hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
   .menu-button {
-    padding: 1px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     color: black;
     font-size: 14px;
-    margin: 0 5px;
-    position: relative;
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
 
   .menu-button.selected {
@@ -54,8 +88,19 @@
     transform: translateX(-50%);
   }
 
-  .logo img {
-    max-height: 50px;
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .left-buttons, .right-buttons {
+      display: none; /* Hide desktop buttons on mobile */
+    }
+
+    .hamburger-icon {
+      display: flex; /* Show hamburger icon on mobile */
+    }
+
+    .mobile-menu {
+      display: none; /* Will be toggled by JavaScript */
+    }
   }
 
   .full-width-background {
@@ -124,22 +169,41 @@
     }
   }
 </style>
+<script>
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
 
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
 </head>
 <body>
+
 <div class="top-menu">
-  <div class="left-buttons">
-    <a href="http://www.meowstudios.org" class="menu-button selected">Home</a>
+  <div class="left-buttons"> <a href="index.html" class="menu-button selected">Home</a>
     <a href="#" class="menu-button">Games</a>
     <a href="contact.html" class="menu-button">Contact</a>
   </div>
   <div class="logo">
-    <img src="meow.png" alt="Logo" /> </div>
-  <div class="right-buttons">
-  <a href="#" class="menu-button">  </a>
+    <img src="meow.png" alt="Logo" />
+  </div>
+  <div class="right-buttons"> <a href="#" class="menu-button">Community</a>
+  </div>
+  <div class="hamburger-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" class="menu-button selected">Home</a>
+    <a href="#" class="menu-button">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
     <a href="#" class="menu-button">Community</a>
   </div>
 </div>
+
+
 <div class="full-width-background">
   </div>
   
