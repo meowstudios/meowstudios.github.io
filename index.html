@@ -17,6 +17,7 @@
     padding: 0 10px;
     box-sizing: border-box;
     position: relative;
+	 z-index: 10; /* Set a higher z-index */
   }
 
   .left-buttons, .right-buttons { /* Show on desktop */
@@ -118,6 +119,7 @@
   }.scrolling-buttons {
     display: inline-flex; /* Use inline-flex for horizontal scrolling */
     animation: scroll 20s linear infinite; /* Adjust animation duration as needed */
+	  z-index: 1; /* Set a lower z-index */
   }
 
   .scroll-button {
