@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meow Studios - Play Casual Games</title>
+<style>
+  /* Include Paytone One from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+  .top-menu {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Add some padding on the sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .left-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    flex-grow: 1; /* Allow logo to take up remaining space in the center */
+    text-align: center; /* Center the logo */
+  }
+
+  .menu-button {
+    padding: 1px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 0 5px; /* Add space between buttons */
+    position: relative; /* Needed for underline */
+	 font-family: 'Paytone One', sans-serif;
+  font-weight: bold; /* Make the font bold */
+  }
+
+  .menu-button.selected {
+    color: orange;
+  }
+
+  .menu-button.selected::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; /* Adjust the distance of the underline */
+    width: 60%; /* Adjust the width of the underline */
+    height: 2px;
+    background-color: orange;
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  /* Example logo styling */
+  .logo img {
+    max-height: 50px; /* Adjust logo height as needed */
+  }
+  .full-width-background {
+    width: 100%; /* Make the div as wide as the screen */
+    background-image: url('WebsiteBanner.jpg'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center top;
+    background-size: cover; /* Scale the image to cover the entire div */
+    min-height: 700px; /* Set a minimum height for the div (adjust as needed) */
+	box-sizing: border-box;
+ padding: 0; /* Explicitly set padding to zero */
+    margin: 0; /* Explicitly set margin to zero */
+  }
+  .privacytext  
+  {
+   padding: 70px;
+  }
+</style>
+</head>
+<body>
+<div class="top-menu">
+  <div class="left-buttons">
+    <a href="http://www.meowstudios.org" class="menu-button selected">Home</a>
+    <a href="#" class="menu-button">Games</a>
+    <a href="contact.index" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <img src="meow.png" alt="Logo" /> </div>
+  <div class="right-buttons">
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+ 
+ <div class="privacytext">
+ <p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios team has adopted this privacy policy (&ldquo;Privacy Policy&rdquo;) to explain how MeowStudios collects, stores, and uses the information collected in connection with MeowStudios&rsquo;s Services.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">BY INSTALLING, USING, REGISTERING TO OR OTHERWISE ACCESSING THE SERVICES, YOU AGREE TO THIS PRIVACY POLICY AND GIVE AN EXPLICIT AND INFORMED CONSENT TO THE PROCESSING OF YOUR PERSONAL DATA IN ACCORDANCE WITH THIS PRIVACY POLICY. IF YOU DO NOT AGREE TO THIS PRIVACY POLICY, PLEASE DO NOT INSTALL, USE, REGISTER TO OR OTHERWISE ACCESS THE SERVICES. MeowStudios reserves the right to modify this Privacy Policy at reasonable times, so please review it frequently. If MeowStudios makes material or significant changes to this Privacy Policy, MeowStudios may post a notice on MeowStudios&rsquo;s website along with the updated Privacy Policy. Your continued use of Services will signify your acceptance of the changes to this Privacy Policy.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Non-personal data</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">For purposes of this Privacy Policy, &ldquo;non-personal data&rdquo; means information that does not directly identify you. The types of non-personal data MeowStudios may collect and use include, but are not limited to: application properties, including, but not limited to application name, package name and icon installed on your device. Your checkin (include like, recommendation) of a game will be disclosed to all MeowStudios users.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios may use and disclose to MeowStudios&rsquo;s partners and contractors the collected non-personal data for purposes of analyzing usage of the Services, advertisement serving, managing and providing the Services and to further develop the Services and other MeowStudios services and products.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">You recognize and agree that the analytics companies utilized by MeowStudios may combine the information collected with other information they have independently collected from other services or products relating to your activities. These companies collect and use information under their own privacy policies.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Personal Data</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">For purposes of this Privacy Policy, &ldquo;personal data&rdquo; means personally identifiable information that specifically identifies you as an individual.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Personal information collected by MeowStudios is information voluntarily provided to us by you when you create your account or change your account&nbsp;</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">information. The information includes your facebook id, name, gender, location and your friends&rsquo;id on facebook. MeowStudios also stores your game checkins, likes, dislikes, recommendations and messages.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios may use collected personal data for purposes of analyzing usage of the Services, providing customer and technical support, managing and providing Services (including managing advertisement serving) and to further develop the Services and other MeowStudios services and products. MeowStudios may combine non-personal data with personal data.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Please note that certain features of the Services may be able to connect to your social networking sites to obtain additional information about you. In such cases, MeowStudios may be able to collect certain information from your social networking profile when your social networking site permits it, and when you consent to allow your social networking site to make that information available to MeowStudios. This information may include, but is not limited to, your name, profile picture, gender, user ID, email address, your country, your language, your time zone, the organizations and links on your profile page, the names and profile pictures of your social networking site &ldquo;friends&rdquo; and other information you have included in your social networking site profile. MeowStudios may associate and/or combine as well as use information collected by MeowStudios and/or obtained through such social networking sites in accordance with this Privacy Policy.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Disclosure and Transfer of Personal Data</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios collects and processes personal data on a voluntary basis and it is not in the business of selling your personal data to third parties. Personal data may, however, occasionally be disclosed in accordance with applicable legislation and this Privacy Policy. Additionally, MeowStudios may disclose personal data to its parent companies and its subsidiaries in accordance with this Privacy Policy.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios may hire agents and contractors to collect and process personal data on MeowStudios&rsquo;s behalf and in such cases such agents and contractors will be instructed to comply with our Privacy Policy and to use personal data only for the purposes for which the third party has been engaged by MeowStudios. These agents and contractors may not use your personal data for their own marketing purposes. MeowStudios may use third party service providers such as credit card processors, e-mail service providers, shipping agents, data analyzers and business intelligence providers. MeowStudios has the right to share your personal data as necessary for the aforementioned third parties to provide their services for MeowStudios. MeowStudios is not liable for the acts and omissions of these third parties, except as provided by mandatory law.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios may disclose your personal data to third parties as required by law enforcement or other government officials in connection with an investigation of fraud, intellectual property infringements, or other activity that is illegal or may expose you or MeowStudios to legal liability. MeowStudios may also disclose your personal data to third parties when MeowStudios has a reason to believe that a disclosure is necessary to address potential or actual injury or interference with MeowStudios&rsquo;s rights, property, operations, users or others who may be harmed or may suffer loss or damage, or MeowStudios believes that such disclosure is necessary to protect MeowStudios&rsquo;s rights, combat fraud and/or comply with a judicial proceeding, court order, or legal process served on MeowStudios. To the extent permitted by applicable law, MeowStudios will make reasonable efforts to notify you of such disclosure through MeowStudios&rsquo;s website or in another reasonable manner.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Safeguards</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios follows generally accepted industry standards and maintains reasonable safeguards to attempt to ensure the security, integrity and privacy of the information in MeowStudios&rsquo;s possession. Only those persons with a need to process your personal data in connection with the fulfillment of their tasks in accordance with the purposes of this Privacy Policy and for the purposes of performing technical maintenance, have access to your personal data in MeowStudios&rsquo;s possession. Personal data collected by MeowStudios is stored in secure operating environments that are not available to the public. To prevent unauthorized on-line access to personal data, MeowStudios maintains personal data behind a firewall-protected server. However, no system can be 100% secure and there is the possibility that despite MeowStudios&rsquo;s reasonable efforts, there could be unauthorized access to your personal data. By using the Services, you assume this risk.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Other</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Please be aware of the open nature of certain social networking and other open features of the Services MeowStudios may make available to you. You may choose to disclose data about yourself in the course of contributing user generated content to the Services. Any data that you disclose in any of these forums, blogs, chats or the like is public information, and there is no expectation of privacy or confidentiality. MeowStudios is not responsible for any personal data you choose to make public in any of these forums.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">If you are under 15 years of age or a minor in your country of residence, please ask your legal guardian&rsquo;s permission to use or access the Services. MeowStudios takes children&rsquo;s privacy seriously, and encourages parents and/or guardians to play an active role in their children's online experience at all times. MeowStudios does not knowingly collect any personal information from children below the aforementioned age and if MeowStudios learns that MeowStudios has inadvertently gathered personal data from children under the aforementioned age, MeowStudios will take reasonable measures to promptly erase such personal data from MeowStudios&rsquo;s records.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios may store and/or transfer your personal data to its affiliates and partners in and outside of EU/EEA member states and the United States in accordance with mandatory legislation and this Privacy Policy. MeowStudios may disclose your personal data to third parties in connection with a corporate merger, consolidation, restructuring, the sale of substantially all of MeowStudios&rsquo;s stock and/or assets or other corporate change, including, without limitation, during the course of any due diligence process provided, however, that this Privacy Policy shall continue to govern such personal data.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">MeowStudios regularly reviews its compliance with this Privacy Policy. If MeowStudios receives a formal written complaint from you, it is MeowStudios&rsquo;s policy to attempt to contact you directly to address any of your concerns. MeowStudios will cooperate with the appropriate governmental authorities, including data protection authorities, to resolve any complaints regarding the collection, use, transfer or disclosure of personal data that cannot be amicably resolved between you and MeowStudios.</span></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><strong><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Contact Us</span></strong></p>
+<p data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><span data-keep-original-tag="false" data-original-attrs="{&quot;style&quot;:&quot;&quot;}">Mail: meowstudios@mail.com</span></p>
+</div>
+  </body>
+</html>
