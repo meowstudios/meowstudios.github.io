@@ -9,6 +9,7 @@
  <style>
  .action-content action-bar--visible action-bar--fixed{display:none;}
   .abuse-disclaimer{display:none;}
+ #branding-action-bar{display:none;}
  </style>
 </head>
 <body>
@@ -55,8 +56,10 @@ Your browser does not support iframes. The contact form cannot be displayed. Ple
       const observer = new MutationObserver(mutations => {
         const actionBar = iframeDoc.querySelector('.action-content.action-bar--visible.action-bar--fixed');
         const disclaimer = iframeDoc.querySelector('.abuse-disclaimer');
+       const branding = iframeDoc.querySelector('#branding-action-bar');
         if (actionBar) actionBar.style.display = 'none';
         if (disclaimer) disclaimer.style.display = 'none';
+        if (branding) branding.style.display = 'none';
       });
       observer.observe(iframeDoc.body, { childList: true, subtree: true });
     }
