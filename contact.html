@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meow Studios - Play Casual Games</title>
+<style>
+  /* Include Paytone One from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+  .top-menu {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Add some padding on the sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .left-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    flex-grow: 1; /* Allow logo to take up remaining space in the center */
+    text-align: center; /* Center the logo */
+  }
+
+  .menu-button {
+    padding: 1px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 0 5px; /* Add space between buttons */
+    position: relative; /* Needed for underline */
+	 font-family: 'Paytone One', sans-serif;
+  font-weight: bold; /* Make the font bold */
+  }
+
+  .menu-button.selected {
+    color: orange;
+  }
+
+  .menu-button.selected::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; /* Adjust the distance of the underline */
+    width: 60%; /* Adjust the width of the underline */
+    height: 2px;
+    background-color: orange;
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  /* Example logo styling */
+  .logo img {
+    max-height: 50px; /* Adjust logo height as needed */
+  }
+  .full-width-background {
+    width: 100%; /* Make the div as wide as the screen */
+    background-image: url('WebsiteBanner.jpg'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center top;
+    background-size: cover; /* Scale the image to cover the entire div */
+    min-height: 700px; /* Set a minimum height for the div (adjust as needed) */
+	box-sizing: border-box;
+ padding: 0; /* Explicitly set padding to zero */
+    margin: 0; /* Explicitly set margin to zero */
+
+  }
+</style>
+</head>
+<body>
+<div class="top-menu">
+  <div class="left-buttons">
+    <a href="http://www.meowstudios.org" class="menu-button selected">Home</a>
+    <a href="#" class="menu-button">Games</a>
+    <a href="contact.index" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <img src="meow.png" alt="Logo" /> </div>
+  <div class="right-buttons">
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+ <script type="text/javascript">
+window.history.pushState("object or string", "Title", "http://www.meowstudios.org/contact");
+</script>&nbsp;<!--www.123formbuilder.com script begins here--><iframe allowtransparency="true" frameborder="0" id="contactform123" marginheight="0" marginwidth="0" name="contactform123" src="http://www.123formbuilder.com/my-contact-form-3844564.html" style="height: inherit; min-height: 800px; overflow: auto;" width="100%">
+<p>
+Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
+</iframe>
+
+<!--www.123formbuilder.com script ends here-->
+
+
+  </body>
+</html>
