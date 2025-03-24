@@ -63,12 +63,50 @@
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center top;
     background-size: cover; /* Scale the image to cover the entire div */
-    min-height: 700px; /* Set a minimum height for the div (adjust as needed) */
+    min-height: 1050px; /* Set a minimum height for the div (adjust as needed) */
 	box-sizing: border-box;
  padding: 0; /* Explicitly set padding to zero */
     margin: 0; /* Explicitly set margin to zero */
+ }
+.content-container {
+  display: flex; /* Establish flex context for column layout */
+  padding: 70px;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  align-items: center; /* Vertically center content */
+}
 
+.image-container {
+  flex: 1; /* Allow image container to grow and shrink */
+  padding-right: 20px; /* Add spacing between image and text */
+}
+
+.text-container {
+  flex: 1; /* Allow text container to grow and shrink */
+  font-family: 'Open Sans', sans-serif;
+}
+.text-container h2{
+      color: orange;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove default inline spacing */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within text container */
   }
+
+  .image-container {
+    padding-right: 0; /* Remove right padding on mobile */
+    padding-bottom: 20px; /* Add space between image and text on mobile */
+  }
+}
 </style>
 </head>
 <body>
@@ -86,5 +124,19 @@
 </div>
 <div class="full-width-background">
   </div>
+  
+  <div class="content-container">
+  <div class="image-container">
+    <img src="CookingBanner.jpg" alt="Cooking Mastery">
+  </div>
+  <div class="text-container">
+    <h2>Play Cooking Mastery</h2>
+	<h3>4.5 ★ (10.1K reviews)</h3>
+    <p>Join millions of players in this free fun simulation. COOK, SERVE and UPGRADE 🍕 Food and Kitchens in this Cooking Game Adventure. 🍳 We offer you a fast-paced cooking gameplay with a variety of delicious meals 🌎 worldwide and the chance to improve your skills in Cooking Mastery. Become the 👨‍🍳 star chef you always dreamed to be and manage your restaurants into the modern era in our highly rewarding 🕑 time-management cooking game. Cook with craze in your pans and hearts to deliver the best food to your customers.</p>
+<img src ="play.png"/> 
+ </div>
+</div>
+  
+ 
   </body>
 </html>
