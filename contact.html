@@ -46,6 +46,28 @@ Your browser does not support iframes. The contact form cannot be displayed. Ple
 
 <!--www.123formbuilder.com script ends here-->
 
+<script>
+ function observeIframeElements(iframeId) {
+  const iframe = document.getElementById(iframeId);
+  if (iframe) {
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    if (iframeDoc) {
+      const observer = new MutationObserver(mutations => {
+        const actionBar = iframeDoc.querySelector('.action-content.action-bar--visible.action-bar--fixed');
+        const disclaimer = iframeDoc.querySelector('.abuse-disclaimer');
+        if (actionBar) actionBar.style.display = 'none';
+        if (disclaimer) disclaimer.style.display = 'none';
+      });
+      observer.observe(iframeDoc.body, { childList: true, subtree: true });
+    }
+  }
+}
+
+window.onload = function(){
+    observeIframeElements('contactform123');
+};
+</script>
+ 
  <script>
   const hamburgerIcon = document.querySelector('.hamburger-icon');
   const mobileMenu = document.querySelector('.mobile-menu');
