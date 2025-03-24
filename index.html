@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meow Studios</title>
+<style>
+  /* Include Paytone One from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+  .top-menu {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Add some padding on the sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .left-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    flex-grow: 1; /* Allow logo to take up remaining space in the center */
+    text-align: center; /* Center the logo */
+  }
+
+  .menu-button {
+    padding: 1px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 0 5px; /* Add space between buttons */
+    position: relative; /* Needed for underline */
+	 font-family: 'Paytone One', sans-serif;
+  font-weight: bold; /* Make the font bold */
+  }
+
+  .menu-button.selected {
+    color: orange;
+  }
+
+  .menu-button.selected::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; /* Adjust the distance of the underline */
+    width: 60%; /* Adjust the width of the underline */
+    height: 2px;
+    background-color: orange;
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  /* Example logo styling */
+  .logo img {
+    max-height: 50px; /* Adjust logo height as needed */
+  }
+  .full-width-background {
+    width: 100%; /* Make the div as wide as the screen */
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0RSuDD-g9Fqlz-bMj2JJHNiKdaPDgSHH8XlXAbmvwqxlvMw23KYResYTYtv6uwQikCBi-8k4Wqv-jn60koZHvPWdOdfA6WfK971hU255GU1rhzStXWnVa-7cQ-3P-juqJPKQH0iR3DQ1cBOCBlggDIm_pESOGXwrizPz26WVcTsDXo1YijKhAPfmdqUk/s2048/WebBanner.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center top;
+    background-size: cover; /* Scale the image to cover the entire div */
+    min-height: 700px; /* Set a minimum height for the div (adjust as needed) */
+	box-sizing: border-box;
+ padding: 0; /* Explicitly set padding to zero */
+    margin: 0; /* Explicitly set margin to zero */
+
+  }
+</style>
+</head>
+<body>
+<div class="top-menu">
+  <div class="left-buttons">
+    <a href="http://www.meowstudios.org" class="menu-button selected">Home</a>
+    <a href="#" class="menu-button">Games</a>
+    <a href="http://www.meowstudios.org/contact" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibiaiME9Oqble67uhDB6XU_MZRiT3FeLTIsNpRgGmL69AdgcR1HUrOIEvwvQ8A_i17zrBxF3MqzOJP27X9HY1SHheA8sa8PTYIGf50Cv21I6YKWZpruY5dKYMZYKis2hpITWApoBAbK8wGqQtPMFPxG9uYntaxgETvzp7rSvvlGYSMJ7g3yHKlyC4ZakU/s320/meow-3-24-2025.png" alt="Logo" /> </div>
+  <div class="right-buttons">
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+<div class="full-width-background">
+  </div>
+  </body>
+</html>
