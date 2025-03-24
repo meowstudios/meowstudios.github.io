@@ -169,14 +169,7 @@
     }
   }
 </style>
-<script>
-  const hamburgerIcon = document.querySelector('.hamburger-icon');
-  const mobileMenu = document.querySelector('.mobile-menu');
 
-  hamburgerIcon.addEventListener('click', () => {
-    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
-  });
-</script>
 </head>
 <body>
 
@@ -255,6 +248,15 @@
  </div>
 </div>
   
+  
+  <script>
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
  
   </body>
 </html>
