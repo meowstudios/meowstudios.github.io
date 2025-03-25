@@ -40,43 +40,33 @@
  <script type="text/javascript">
 window.history.pushState("object or string", "Title", "https://www.meowstudios.org/contact");
 </script>
- <!--www.123formbuilder.com script begins here--><iframe allowtransparency="true" frameborder="0" id="contactform123" marginheight="0" marginwidth="0" name="contactform123" src="https://www.123formbuilder.com/my-contact-form-3844564.html" style="height: inherit; min-height: 800px; overflow: auto;" width="100%">
-<p>
-Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
-</iframe>
-
-<!--www.123formbuilder.com script ends here--> 
-
+ 
  <!-- form.123formbuilder.com script begins here -->
 <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/3844564.js" data-role="form" data-default-width="800px" data-custom-vars="hasEmbedFormStyle=1"></script>
 <!-- form.123formbuilder.com script ends here -->
- 
+
 <script>
-  const hideElements = () => {
+  const hideFormElements = () => {
     const selectors = [
-      '.action-content.action-bar--visible.action-bar--fixed',
       '.abuse-disclaimer',
-      '#branding-action-bar'
+      '#branding-action-bar',
+      '.action-bar--fixed'
     ];
-    
-    selectors.forEach(selector => {
-      document.querySelectorAll(selector).forEach(el => {
+
+    selectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
         el.style.display = 'none';
       });
     });
   };
 
-  // Wait until DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', () => {
-    // Retry in intervals in case content is loaded later
-    const interval = setInterval(() => {
-      hideElements();
-    }, 500);
+  const observer = new MutationObserver(() => hideFormElements());
+  observer.observe(document.body, { childList: true, subtree: true });
 
-    // Stop after 5 seconds
-    setTimeout(() => clearInterval(interval), 5000);
-  });
-</script>
+  // Optional: kill the observer after 10s
+  setTimeout(() => observer.disconnect(), 10000);
+</script> 
+  
 
  
  <script>
