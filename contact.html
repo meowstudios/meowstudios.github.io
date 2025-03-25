@@ -45,31 +45,7 @@ window.history.pushState("object or string", "Title", "https://www.meowstudios.o
 Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
 </iframe>
 
-<!--www.123formbuilder.com script ends here-->
-
-<script>
- function observeIframeElements(iframeId) {
-  const iframe = document.getElementById(iframeId);
-  if (iframe) {
-    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    if (iframeDoc) {
-      const observer = new MutationObserver(mutations => {
-        const actionBar = iframeDoc.querySelector('.action-content.action-bar--visible.action-bar--fixed');
-        const disclaimer = iframeDoc.querySelector('.abuse-disclaimer');
-       const branding = iframeDoc.querySelector('#branding-action-bar');
-        if (actionBar) actionBar.style.display = 'none';
-        if (disclaimer) disclaimer.style.display = 'none';
-        if (branding) branding.style.display = 'none';
-      });
-      observer.observe(iframeDoc.body, { childList: true, subtree: true });
-    }
-  }
-}
-
-window.onload = function(){
-    observeIframeElements('contactform123');
-};
-</script>
+<!--www.123formbuilder.com script ends here--> 
  
  <script>
   const hamburgerIcon = document.querySelector('.hamburger-icon');
