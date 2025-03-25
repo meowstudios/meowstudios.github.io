@@ -7,10 +7,15 @@
  <link rel="stylesheet" href="styles.css"> 
 
  <style>
- .action-content action-bar--visible action-bar--fixed{display:none;}
-  .abuse-disclaimer{display:none;}
- #branding-action-bar{display:none;}
-  .action-bar__group{display:none;}
+ .action-content action-bar--visible action-bar--fixed,
+.action-bar__group,
+  #branding-action-bar,
+.abuse-disclaimer,
+.action-bar--fixed {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
  </style>
 </head>
 <body>
