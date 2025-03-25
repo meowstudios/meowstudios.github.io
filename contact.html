@@ -56,29 +56,18 @@ window.history.pushState("object or string", "Title", "https://www.meowstudios.o
 <!-- form.123formbuilder.com script ends here -->
 
 <script>
-  const hideFormElements = () => {
-    const selectors = [
-      '.abuse-disclaimer',
-      '#branding-action-bar',
-      '.action-bar--fixed',
-      'action-bar__group',
-     'action-content action-bar--visible action-bar--fixed'
-    ];
+  const observer = new MutationObserver(() => {
+    const el = document.querySelector('#branding-action-bar');
+    if (el) {
+      el.style.setProperty('display', 'none', 'important');
+    }
+  });
 
-    selectors.forEach(sel => {
-      document.querySelectorAll(sel).forEach(el => {
-        el.style.display = 'none';
-      });
-    });
-  };
-
-  const observer = new MutationObserver(() => hideFormElements());
   observer.observe(document.body, { childList: true, subtree: true });
 
-  // Optional: kill the observer after 10s
+  // Optional: stop watching after 10s
   setTimeout(() => observer.disconnect(), 10000);
-</script> 
-  
+</script>
 
  
  <script>
