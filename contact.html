@@ -7,11 +7,7 @@
  <link rel="stylesheet" href="styles.css"> 
 
  <style>
- .action-content action-bar--visible action-bar--fixed,
-.action-bar__group,
-  #branding-action-bar,
-.abuse-disclaimer,
-.action-bar--fixed {
+.abuse-disclaimer{
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
@@ -54,20 +50,6 @@ window.history.pushState("object or string", "Title", "https://www.meowstudios.o
  <!-- form.123formbuilder.com script begins here -->
 <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/3844564.js" data-role="form" data-default-width="800px" data-custom-vars="hasEmbedFormStyle=1"></script>
 <!-- form.123formbuilder.com script ends here -->
-
-<script>
-  const observer = new MutationObserver(() => {
-    const el = document.querySelector('#branding-action-bar');
-    if (el) {
-      el.style.setProperty('display', 'none', 'important');
-    }
-  });
-
-  observer.observe(document.body, { childList: true, subtree: true });
-
-  // Optional: stop watching after 10s
-  setTimeout(() => observer.disconnect(), 10000);
-</script>
 
  
  <script>
