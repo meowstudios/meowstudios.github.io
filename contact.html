@@ -10,6 +10,7 @@
  .action-content action-bar--visible action-bar--fixed{display:none;}
   .abuse-disclaimer{display:none;}
  #branding-action-bar{display:none;}
+  .action-bar__group{display:none;}
  </style>
 </head>
 <body>
@@ -50,7 +51,8 @@ window.history.pushState("object or string", "Title", "https://www.meowstudios.o
     const selectors = [
       '.abuse-disclaimer',
       '#branding-action-bar',
-      '.action-bar--fixed'
+      '.action-bar--fixed',
+      'action-bar__group'
     ];
 
     selectors.forEach(sel => {
