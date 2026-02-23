@@ -13,6 +13,12 @@
 	 z-index: 10; /* Set a higher z-index */
   }
 
+.videofooter
+{
+align-items: center;	
+	 text-align: center;
+}
+
   .left-buttons, .right-buttons { /* Show on desktop */
     display: flex;
     align-items: center;
@@ -224,5 +230,6 @@ padding-right:70px;
  
 
 }
+
 
 
