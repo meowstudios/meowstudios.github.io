@@ -1,0 +1,2 @@
+ironsrc.com, 400000000, DIRECT, 79929e88b2ba73bc
+unity.com, 561000410, DIRECT
