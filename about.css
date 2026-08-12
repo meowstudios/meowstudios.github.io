@@ -64,7 +64,7 @@
 
 .about-intro {
     max-width: 750px;
-    margin: 0 auto 75px;
+    margin: 0 auto 60px;
 }
 
 .about-intro h1 {
@@ -97,8 +97,8 @@
 .about-story {
     max-width: 720px;
 
-    margin: 0 auto 85px;
-    padding-top: 55px;
+    margin: 0 auto 55px;
+    padding-top: 35px;
 
     border-top: 1px solid #eadfd8;
 }
@@ -128,7 +128,7 @@
 /* TEAM */
 
 .about-team {
-    padding-top: 65px;
+    padding-top: 45px;
     border-top: 1px solid #eadfd8;
 }
 
