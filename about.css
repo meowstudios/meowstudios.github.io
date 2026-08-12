@@ -1,0 +1,305 @@
+/* ======================================================
+   ABOUT PAGE
+   ====================================================== */
+
+.about-page {
+    margin: 0;
+    background: #fffaf7;
+    color: #292321;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* MAIN CONTAINER */
+
+.about-wrapper {
+    width: calc(100% - 40px);
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px 20px 90px;
+    text-align: center;
+}
+
+
+/* TOP IMAGE */
+
+.about-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 50px;
+
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(100, 35, 10, 0.15);
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* SMALL ORANGE LABEL */
+
+.about-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #ed7118;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* INTRO */
+
+.about-intro {
+    max-width: 750px;
+    margin: 0 auto 80px;
+}
+
+.about-intro h1 {
+    margin: 0 0 25px;
+
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.about-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #706761;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* STORY */
+
+.about-story {
+    max-width: 720px;
+
+    margin: 0 auto 90px;
+    padding-top: 60px;
+
+    border-top: 1px solid #eadfd8;
+}
+
+.about-story h2 {
+    margin: 0 0 22px;
+
+    font-size: 36px;
+}
+
+.about-story p {
+    margin: 0;
+
+    color: #706761;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TEAM */
+
+.about-team {
+    padding-top: 70px;
+
+    border-top: 1px solid #eadfd8;
+}
+
+.about-team > h2 {
+    margin: 0 0 50px;
+
+    font-size: 38px;
+}
+
+
+/* TWO COLUMNS */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* TEAM MEMBER */
+
+.team-member {
+    padding: 45px 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #f0e4dc;
+    border-radius: 24px;
+
+    box-shadow:
+        0 12px 35px rgba(90, 40, 15, 0.07);
+}
+
+.team-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffa323,
+            #ef5518
+        );
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.team-member h3 {
+    margin: 0 0 8px;
+
+    font-size: 25px;
+}
+
+.team-role {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #e96e19;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.team-member p {
+    max-width: 300px;
+
+    margin: 0 auto;
+
+    color: #766d67;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* BOTTOM */
+
+.about-bottom {
+    margin-top: 90px;
+    padding-top: 60px;
+
+    border-top: 1px solid #eadfd8;
+}
+
+.about-bottom p {
+    margin: 0 0 25px;
+
+    color: #6f6660;
+
+    font-size: 18px;
+}
+
+
+/* BUTTON */
+
+.about-button {
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff9820,
+            #ed5217
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 25px rgba(225, 82, 20, 0.25);
+
+    transition: 0.2s ease;
+}
+
+.about-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(225, 82, 20, 0.32);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .about-wrapper {
+        width: calc(100% - 30px);
+        padding-top: 25px;
+    }
+
+    .about-image {
+        margin-bottom: 40px;
+    }
+
+    .about-intro {
+        margin-bottom: 60px;
+    }
+
+    .about-story {
+        margin-bottom: 65px;
+        padding-top: 50px;
+    }
+
+    .about-team {
+        padding-top: 55px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member {
+        padding: 35px 25px;
+    }
+
+    .about-bottom {
+        margin-top: 65px;
+    }
+}
