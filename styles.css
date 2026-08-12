@@ -13,6 +13,16 @@
 	 z-index: 10; /* Set a higher z-index */
   }
 
+.about-hero-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(104, 31, 0, 0.18);
+}
+
 .videofooter
 {
 align-items: center;	
