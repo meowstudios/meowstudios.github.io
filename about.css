@@ -185,28 +185,22 @@
 /* INITIAL CIRCLE */
 
 .team-avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 75px;
-    height: 75px;
+    width: 110px;
+    height: 110px;
 
     margin: 0 auto 22px;
 
-    border-radius: 50%;
+    border-radius: 22px;
+    overflow: hidden;
 
-    background: linear-gradient(
-        135deg,
-        #ffa323,
-        #ef5518
-    );
+    box-shadow: 0 8px 20px rgba(90, 40, 15, 0.12);
+}
 
-    color: white;
-
-    font-family: 'Paytone One', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+.team-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
