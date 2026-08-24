@@ -1,0 +1,236 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News | Meow Studios</title>
+
+    <meta name="description" content="Latest news, updates and milestones from Meow Studios and our games.">
+
+    <meta property="og:title" content="News | Meow Studios">
+    <meta property="og:description" content="Latest news, updates and milestones from Meow Studios and our games.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.meowstudios.org/news/">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #2b2b2b;
+        }
+
+        .news-wrapper {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 70px 0 100px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #777;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .news-header {
+            margin-bottom: 55px;
+        }
+
+        .news-header h1 {
+            margin: 0 0 15px;
+            font-size: clamp(44px, 7vw, 72px);
+            line-height: 1;
+            color: #222;
+        }
+
+        .news-header p {
+            margin: 0;
+            max-width: 650px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .news-card {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 35px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .news-card:last-child {
+            border-bottom: none;
+        }
+
+        .news-card-image {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 22px;
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .news-card:hover .news-card-image {
+            transform: scale(1.015);
+        }
+
+        .news-date {
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .news-card h2 {
+            margin: 0 0 15px;
+            font-size: 32px;
+            line-height: 1.15;
+            color: #222;
+        }
+
+        .news-card p {
+            margin: 0 0 20px;
+            font-size: 17px;
+            line-height: 1.65;
+            color: #666;
+        }
+
+        .read-more {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 800px) {
+            .news-wrapper {
+                padding: 40px 0 70px;
+            }
+
+            .news-header {
+                margin-bottom: 40px;
+            }
+
+            .news-header p {
+                font-size: 18px;
+            }
+
+            .news-card {
+                grid-template-columns: 1fr;
+                gap: 22px;
+                padding-bottom: 40px;
+            }
+
+            .news-card h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="news-wrapper">
+
+        <a href="../" class="back-link">← Back to Home</a>
+
+        <header class="news-header">
+            <h1>News</h1>
+
+            <p>
+                Updates, milestones and news from Meow Studios and our games.
+            </p>
+        </header>
+
+        <section class="news-list">
+
+            <!-- Cooking Mastery -->
+            <a
+                href="cooking-mastery-3-million-downloads.html"
+                class="news-card"
+            >
+                <img
+                    class="news-card-image"
+                    src="../news/cooking-mastery-3-million.jpg"
+                    alt="Cooking Mastery"
+                >
+
+                <div class="news-card-content">
+
+                    <div class="news-date">
+                        <time datetime="2026-08-24">August 24, 2026</time>
+                    </div>
+
+                    <h2>
+                        Cooking Mastery Surpasses 3 Million Downloads Worldwide
+                    </h2>
+
+                    <p>
+                        Cooking Mastery has surpassed 3 million downloads worldwide,
+                        marking a major milestone for our restaurant cooking game.
+                    </p>
+
+                    <span class="read-more">Read More →</span>
+
+                </div>
+            </a>
+
+            <!-- Solitaire Harvest Mastery -->
+            <a
+                href="solitaire-harvest-mastery-2250-levels.html"
+                class="news-card"
+            >
+                <img
+                    class="news-card-image"
+                    src="../news/solitaire-harvest-2250.jpg"
+                    alt="Solitaire Harvest Mastery"
+                >
+
+                <div class="news-card-content">
+
+                    <div class="news-date">
+                        <time datetime="2026-06-18">June 18, 2026</time>
+                    </div>
+
+                    <h2>
+                        Solitaire Harvest Mastery Reaches 2,250 Levels
+                    </h2>
+
+                    <p>
+                        Solitaire Harvest Mastery has reached 2,250 playable levels,
+                        continuing to grow with new farms, environments and TriPeaks
+                        solitaire challenges.
+                    </p>
+
+                    <span class="read-more">Read More →</span>
+
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```
