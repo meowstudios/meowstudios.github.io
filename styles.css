@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 650px;
 
-    background-image: url('WebsiteFooter.png');
+    background-image: url('bottomBg.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% auto;
