@@ -2,7 +2,7 @@
 
 .grass-footer { 
     width: 100%; 
-    min-height: 650px; 
+    min-height: 450px; 
 
     /* Mobile image by default */
     background-image: url('bottomBg.png'); 
