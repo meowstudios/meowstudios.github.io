@@ -1,17 +1,25 @@
    @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
-.grass-footer {
-    width: 100%;
-    min-height: 650px;
+.grass-footer { 
+    width: 100%; 
+    min-height: 650px; 
 
-    background-image: url('bottomBg.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100% auto;
+    /* Mobile image by default */
+    background-image: url('bottomBg.png'); 
+    background-repeat: no-repeat; 
+    background-position: center bottom; 
+    background-size: 100% auto; 
 
-    position: relative;
-    display: flex;
-    align-items: flex-end;
+    position: relative; 
+    display: flex; 
+    align-items: flex-end; 
+}
+
+/* Desktop + tablet landscape */
+@media (min-width: 1024px) { 
+    .grass-footer { 
+        background-image: url('bottomBg-desktop.png'); 
+    } 
 }
 
 .copyright {
