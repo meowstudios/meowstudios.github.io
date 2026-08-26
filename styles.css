@@ -2,24 +2,22 @@
 
 .grass-footer {
     width: 100%;
-    min-height: 600px;
+    min-height: 650px;
 
     background-image: url('WebsiteFooter.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% auto;
 
+    position: relative;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-
-    box-sizing: border-box;
 }
 
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 0 40px 30px;
+    padding-bottom: 25px;
     box-sizing: border-box;
 }
 
@@ -27,7 +25,18 @@
     max-width: 430px;
     width: 80%;
     height: auto;
+    margin-bottom: 30px;
 }
+
+.copyright p {
+    margin: 8px auto;
+}
+
+.copyright p:not(:first-child) {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
 
 .studio-description {
     color: #777;
