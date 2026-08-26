@@ -153,21 +153,23 @@ align-items: center;
   }*/
 
   /* Mobile Styles */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .left-buttons, .right-buttons {
-      display: none; /* Hide desktop buttons on mobile */
-		 .studio-description {
+        display: none;
+    }
+
+    .studio-description {
         display: none;
     }
 
     .hamburger-icon {
-      display: flex; /* Show hamburger icon on mobile */
+        display: flex;
     }
 
     .mobile-menu {
-      display: none; /* Will be toggled by JavaScript */
+        display: none;
     }
-  }
+}
 
   .full-width-background {
     width: 100%;
