@@ -156,6 +156,8 @@ align-items: center;
   @media (max-width: 768px) {
     .left-buttons, .right-buttons {
       display: none; /* Hide desktop buttons on mobile */
+		 .studio-description {
+        display: none;
     }
 
     .hamburger-icon {
