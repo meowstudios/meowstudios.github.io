@@ -398,3 +398,82 @@ padding-right:70px;
     height: 55px;
     max-width: none;
 }
+
+
+.games-strip {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.games-strip > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.strip-stats {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    width: 100%;
+    z-index: 2;
+}
+/* Frosted glass stats box */
+.strip-stat {
+    /*position: absolute;      
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);*/
+
+    width: 170px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.28);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 28px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45);
+
+    color: white;
+    text-align: center;
+}
+
+.strip-stat-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 800;
+
+    text-shadow: 0 3px 8px rgba(0,0,0,0.18);
+}
+
+.strip-stat-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-top: 30px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
