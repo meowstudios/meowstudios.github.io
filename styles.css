@@ -176,8 +176,8 @@ align-items: center;
 
 	.storeButSmallerOnMobile img,
   img.storeButSmallerOnMobile {
-    width: 60% !important;
-    max-width: 60% !important;
+    width: 120px !important;
+    max-width: 120px !important;
     height: auto !important;
     display: inline;
   }
