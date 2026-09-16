@@ -654,4 +654,17 @@ padding-right:70px;
         font-size: 0.8rem;
         margin-top: 2px;
     } 
+	
+	 .game-buttons {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .text-container .game-buttons img {
+        height: 50px;
+    }
+
 }
