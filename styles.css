@@ -183,6 +183,8 @@ align-items: center;
     height: auto !important;
     display: inline;
   }
+  
+  
 }
 
   .full-width-background {
@@ -624,4 +626,32 @@ padding-right:70px;
     .mobile-description {
         display: block;
     }
+
+ 
+
+    .game-rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 2px;
+        width: 100%;
+    }
+
+    .stars {
+        flex-shrink: 0;
+    }
+
+    .rating-number {
+        flex-shrink: 0;
+    }
+
+    .review-count {
+        flex: 0 0 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 2px;
+    } 
 }
