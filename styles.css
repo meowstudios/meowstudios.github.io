@@ -336,7 +336,14 @@ align-items: center;
 padding-right:70px;		
   }
  
-
+.stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: .125rem;
+    color: #ffb800;
+    font-size: 1.25rem;
+}
 
 
 
