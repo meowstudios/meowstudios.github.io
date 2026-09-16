@@ -154,13 +154,15 @@ align-items: center;
 
   /* Mobile Styles */
 @media (max-width: 768px) {
-
+	
 	 .desktop-only-play {
         display: none !important;
     }
+	
     .left-buttons, .right-buttons {
         display: none;
     }
+	
 
     .studio-description {
         display: none;
@@ -173,7 +175,7 @@ align-items: center;
     .mobile-menu {
         display: none;
     }
-
+	
 	.storeButSmallerOnMobile img,
   img.storeButSmallerOnMobile {
     width: 120px !important;
@@ -291,11 +293,11 @@ align-items: center;
         text-align: center;
 
         width: calc(100% - 30px);
-        margin: 30px auto;
-        padding: 15px;
+        margin: 20px auto;
+        padding: 8px;
 
         border-radius: 22px;
-        gap: 15px;
+        gap: 8px;
     }
 
     .image-container {
@@ -307,7 +309,7 @@ align-items: center;
 
     .text-container {
         width: 100%;
-        padding: 5px 10px 15px;
+        padding: 0px 10px 12px;
         box-sizing: border-box;
     }
 
@@ -410,7 +412,6 @@ padding-right:70px;
     height: 55px;
     max-width: none;
 }
-
 
 .games-strip {
     width: 100%;
@@ -561,7 +562,6 @@ padding-right:70px;
     }
 }
 
-
 .games-strip-pan {
     width: 100%;
     overflow: hidden;
@@ -602,5 +602,24 @@ padding-right:70px;
         100% {
             transform: translateX(calc(100vw - 100%));
         }
+    }
+}
+/* Desktop */
+.desktop-description {
+    display: block;
+}
+
+.mobile-description {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .desktop-description {
+        display: none;
+    }
+
+    .mobile-description {
+        display: block;
     }
 }
