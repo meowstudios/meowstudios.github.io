@@ -154,6 +154,10 @@ align-items: center;
 
   /* Mobile Styles */
 @media (max-width: 768px) {
+
+	 .desktop-only-play {
+        display: none !important;
+    }
     .left-buttons, .right-buttons {
         display: none;
     }
