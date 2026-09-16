@@ -338,6 +338,9 @@
     .about-intro h1 {
         font-size: 42px;
     }
+    .about-intro h2 {
+        font-size: 31px;
+    }
 
     .about-intro p {
         font-size: 16px;
