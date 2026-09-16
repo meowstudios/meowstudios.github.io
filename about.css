@@ -78,6 +78,15 @@
 
     color: #292321;
 }
+.about-intro h2 {
+    margin: 0 0 22px;
+
+    font-family: 'Paytone One', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+
+    color: #292321;
+}
 
 .about-intro p {
     max-width: 650px;
