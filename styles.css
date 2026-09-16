@@ -376,3 +376,25 @@ padding-right:70px;
     color: #777;
     flex-shrink: 0;
 }
+.game-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.game-buttons a {
+    display: block;
+}
+
+.game-buttons img {
+    display: block;
+    width: auto;
+    height: 55px;
+}
+.text-container .game-buttons img {
+    width: auto;
+    height: 55px;
+    max-width: none;
+}
