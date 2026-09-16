@@ -173,6 +173,14 @@ align-items: center;
     .mobile-menu {
         display: none;
     }
+
+	.storeButSmallerOnMobile img,
+  img.storeButSmallerOnMobile {
+    width: 60% !important;
+    max-width: 60% !important;
+    height: auto !important;
+    display: inline;
+  }
 }
 
   .full-width-background {
