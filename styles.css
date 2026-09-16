@@ -345,26 +345,28 @@ padding-right:70px;
     font-size: 1.25rem;
 }
 
-.game-rating
-Specificity: (0,1,0)
- {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.game-rating {
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    gap: .5rem;
-    font-size: 1rem;
+    gap: 10px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
-.game-rating h3 {
-    margin: 0;
+
+.stars {
+    color: #ffb800;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    flex-shrink: 0;
 }
+
 .rating-number {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #303342;
+    flex-shrink: 0;
 }
 
 .review-count {
@@ -372,6 +374,5 @@ Specificity: (0,1,0)
     font-size: 0.95rem;
     font-weight: 600;
     color: #777;
+    flex-shrink: 0;
 }
-
-
