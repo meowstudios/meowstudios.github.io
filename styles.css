@@ -315,6 +315,8 @@ align-items: center;
 
     .text-container h2 {
         font-size: 1.5em;
+		padding: 1px!important;
+		 margin: 1px!important;
     }
 
     .text-container p {
