@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.png" type="image/png">
+<title>Classic Solitaire</title>
+   <link rel="stylesheet" href="styles.css"> 
+
+</head>
+<body>
+
+<div class="top-menu">
+  <div class="left-buttons"> <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+  </div>
+  <div class="logo">
+    <a href="index.html"> <img src="meow.png" alt="Logo" /></a>
+  </div>
+  <div class="right-buttons"> <a href="#" class="menu-button">Community</a>
+  </div>
+  <div class="hamburger-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" class="menu-button">Home</a>
+    <a href="games.html" class="menu-button">Games</a>
+    <a href="contact.html" class="menu-button">Contact</a>
+    <a href="#" class="menu-button">Community</a>
+  </div>
+</div>
+ 
+  <img class = "myBannerImg" src = "ClassicSolitaireBanner.jpg"/>
+  <br/>
+ 
+  <div align = "center" class = "myGameTitle">
+     <img src = "icon7.png"/>
+  <br/>
+  <h2>Classic Solitaire - 4.3 ★</h2>
+  
+  <a id="amazonLink" href="https://www.amazon.com/Solitaire-Classic-Klondike-Card-Games/dp/B0F24HP99S/">
+  <img src="but-amazon.png" alt="Amazon Appstore">
+</a>
+  <a id="appstoreLink" href="https://apps.apple.com/us/app/solitaire-classic-klondike-ace/id6743625382/">
+  <img src="but-appstore.png" alt="App Store">
+</a>
+<a id="googleplayLink" href="https://play.google.com/store/apps/details?id=com.casualgamesempire.solitaireclassicklondike">
+  <img src="but-google.png" alt="Google Play">
+</a>
+
+   <p>Solitaire Classic Win Klondike, a card game for all ages!
+
+Enjoy a classic game of Solitaire, the Klondike Win Solitaire game, always in your pocket, perfect for players of all ages, easy to learn and practice every day!
+Whether you're a veteran solitaire card games player or you are just starting up to enjoy a good old card game. Practice your patience and strategy with a solitaire cards game designed with smooth gameplay, relaxing fun, and endless entertainment. Play a calming and relaxing solitaire game, with no internet needed! Swap between game styles and customizations of cards or boards of an unique solitaire experience every time. Nostalgic for the old days when you used to play solitaire or other card games at the office? Look no more, Solitaire Classic Win Klondike brings the magic of the '90s and 2000s back!</p>
+
+<img class = "myBannerImg" src = "csolitaire-screen1.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "csolitaire-screen2.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "csolitaire-screen3.jpg"/>
+<br/>
+<img class = "myBannerImg" src = "csolitaire-screen4.jpg"/>
+  </div>
+
+<script>
+function isFireTablet() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /silk/i.test(userAgent) && /android/i.test(userAgent);
+}
+
+const appstoreLink = document.getElementById("appstoreLink");
+const googleplayLink = document.getElementById("googleplayLink");
+const amazonLink = document.getElementById("amazonLink");
+
+if (isFireTablet()) {
+  appstoreLink.style.display = "inline";
+  googleplayLink.style.display = "inline";
+  amazonLink.style.display = "inline"; // Or "block", depending on your layout
+} else {
+  amazonLink.style.display = "none";
+}
+</script>
+ <script>
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+  </body>
+</html>
